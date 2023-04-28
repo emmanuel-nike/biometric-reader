@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/primaryText</item>
+        <item name="android:textColorSecondary">@color/secondaryText</item>
+        <item name="android:textColorTertiary">@color/secondaryText</item>
+        <item name="searchViewStyle">@style/MySearchViewStyle</item>
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.NoActionBar">
+        <!-- 使用 API Level 22 编译的話，要拿掉前缀字 -->
+        <item name="windowNoTitle">true</item>
+        <!-- Actionbar color -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:windowBackground">@color/write</item>
+        <item name="android:actionButtonStyle">@color/gray</item>
+    </style>
+
+    <!--popupTheme-->
+    <style name="ToolbarPopupTheme" parent="@style/ThemeOverlay.AppCompat.Dark">
+        <!--<item name="android:colorBackground">#000000</item> 也可以设置背景色以及menu中的其他属性-->
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+    </style>
+    <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>  <!--设置不覆盖锚点-->
+    </style>
+
+    <!--button的颜色-->
+    <style name="AutoButton" parent="Theme.AppCompat.Light">
+        <item name="buttonBarButtonStyle">@color/button_material_light</item>
+    </style>
+</resources>

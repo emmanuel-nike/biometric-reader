@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="AppTheme.Base">
+        <item name="android:textColorPrimary">@color/primaryText</item>
+        <item name="android:textColorSecondary">@color/secondaryText</item>
+        <!--item name="itemIconTint">@color/primaryText</item-->
+        <item name="iconTint">@color/primaryText</item>
+        <item name="icon">@color/primaryText</item>
+    </style>
+</resources>

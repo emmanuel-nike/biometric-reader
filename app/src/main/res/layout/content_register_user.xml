@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.70" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/linearLayoutPhoto"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/enter_username"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        app:autoSizeTextType="uniform" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="15sp" />
+
+                    <EditText
+                        android:id="@+id/usernameEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="@string/enter_username"
+                        android:inputType="text"
+                        android:minHeight="48dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10sp" />
+
+                    <EditText
+                        android:id="@+id/fullNameEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_background"
+                        android:backgroundTint="@color/grayLight"
+                        android:enabled="false"
+                        android:inputType="text"
+                        android:minHeight="48dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutPhoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline9"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.75">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20sp" />
+
+                    <ImageView
+                        android:id="@+id/profilePhotoImageView"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/grayLight" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10sp" />
+
+        <Button
+            android:id="@+id/getUserDataButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button"
+            android:minHeight="48dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/get_user_data"
+            android:textColor="#FFFFFF" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.65" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20sp" />
+
+                    <Button
+                        android:id="@+id/registerFingerprintsButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_button"
+                        android:enabled="false"
+                        android:minHeight="48dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/register_fingerprints"
+                        android:textColor="#FFFFFF" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20sp" />
+
+                    <EditText
+                        android:id="@+id/cardTagEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_background"
+                        android:backgroundTint="@color/grayLight"
+                        android:enabled="false"
+                        android:inputType="text"
+                        android:minHeight="48dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="11sp" />
+
+                    <Button
+                        android:id="@+id/registerCardButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/bg_button"
+                        android:enabled="false"
+                        android:minHeight="48dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/register_card"
+                        android:textColor="#FFFFFF" />
+                    />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.75">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20sp" />
+
+                    <ImageView
+                        android:id="@+id/fingerPrintImageView"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/grayLight" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30sp" />
+
+        <Button
+            android:id="@+id/registerUserButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button"
+            android:enabled="false"
+            android:minHeight="48dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/register_user"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

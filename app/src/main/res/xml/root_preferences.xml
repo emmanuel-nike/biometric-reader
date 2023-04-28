@@ -1,0 +1,27 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="Main Configuration">
+        <EditTextPreference
+            app:key="institution"
+            app:defaultValue="Biometric Authorization System"
+            app:title="Institution Name" />
+
+        <EditTextPreference
+            app:key="email"
+            app:defaultValue="admin@eduportal.live"
+            app:title="Institution Email" />
+
+        <EditTextPreference
+            app:key="base_url"
+            app:defaultValue="http://clocking.edu-portal.live/api/"
+            app:title="Base URL" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Behaviour">
+        <SwitchPreferenceCompat
+            app:key="show_response"
+            app:title="Show Web Response"
+            app:defaultValue="true"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

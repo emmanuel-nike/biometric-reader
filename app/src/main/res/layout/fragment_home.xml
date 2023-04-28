@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:id="@+id/radioGroup">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@color/grayLight2"
+                android:id="@+id/clockin"
+                android:textColor="@android:color/black"
+                android:text="@string/clock_in"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@color/grayLight2"
+                android:id="@+id/clockout"
+                android:textColor="@android:color/black"
+                android:text="@string/clock_out"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@color/grayLight2"
+                android:id="@+id/pickup"
+                android:textColor="@android:color/black"
+                android:text="@string/pickup"/>
+        </RadioGroup>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+        <ImageView
+            android:id="@+id/scanImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/grayLight2" />
+        <TextView
+            android:id="@+id/text_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="30dp"
+            android:text="@string/click_to_start_the_service"
+            android:textSize="16sp" />
+        <Button
+            android:id="@+id/startFp"
+            android:enabled="false"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="@string/start_finger_print_service"
+            android:background="@drawable/bg_button"
+            android:textColor="@color/write"
+            android:layout_marginBottom="10dp"
+            android:paddingHorizontal="20sp" />
+        <Button
+            android:id="@+id/startCard"
+            android:enabled="false"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="@string/start_card_service"
+            android:background="@drawable/bg_button"
+            android:textColor="@color/write"
+            android:paddingHorizontal="20sp" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/text_response"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/darker_gray"
+            android:text="@string/last_server_response"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,113 @@
+<resources>
+
+    <string name="app_name">EDP Notifier</string>
+
+    <string name="connect_a_device">Connect a device</string>
+    <string name="make_discoverable">Make discoverable</string>
+
+    <!--  BluetoothChat -->
+    <string name="send">Send</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
+    <string name="title_connecting">connecting...</string>
+    <string name="title_connected_to">connected: </string>
+    <string name="title_not_connected">not connected</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">scanning for devices...</string>
+    <string name="select_device">Select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+
+    <!-- Options Menu -->
+    <string name="connect">Connect a device</string>
+    <string name="discoverable">Make discoverable</string>
+
+    <string name="EnrolID">Enrol ID</string>
+    <string name="Verify">Verify ID</string>
+    <string name="Identify">Search</string>
+    <string name="DeleteID">Delete ID</string>
+    <string name="ClearID">Clear</string>
+    <string name="EnrolHost">Enrol Template</string>
+    <string name="CaptureHost">Capture Template</string>
+    <string name="Match">Match Template</string>
+    <string name="WriteFPCard">Write FP Card</string>
+    <string name="ReadFPCard">Read FP Card</string>
+    <string name="FPCardMatch">Fingeprint Card Match</string>
+    <string name="CardSn">Read Card SN</string>
+    <string name="ReadDataCard">Read Card Data</string>
+    <string name="WriteDataCard">Write Card Data</string>
+
+    <string name="PrintText">Print Text</string>
+    <string name="PrintBarcode">Print Barcode</string>
+
+    <string name="getdevsn">Device SN</string>
+    <string name="getbat">Battery Value</string>
+    <string name="getimage200">Get Image 200</string>
+    <string name="getimage288">Get Image 288</string>
+    <string name="getimage360">Get Image 360</string>
+    <string name="getdata">Get Data</string>
+    <string name="getversion">Device Version</string>
+    <string name="please_enter_numbers_or_letters">Please enter Numbers or letters</string>
+    <string name="Test">Test</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Biometric AAS</string>
+    <string name="nav_header_subtitle">admin@biometric-aas.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="menu_users">Users</string>
+    <string name="menu_history">History</string>
+    <string name="menu_debug">Debug</string>
+    <string name="menu_logout">Logout</string>
+    <string name="title_activity_add_user">AddUserActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_register_user">RegisterUserActivity</string>
+    <string name="enter_username">Enter username</string>
+    <string name="register_fingerprints">Register Fingerprints</string>
+    <string name="get_user_data">Get User Data</string>
+    <string name="register_card">Register Card Tag</string>
+    <string name="register_user">Register User</string>
+    <string name="john_doe">John Doe</string>
+    <string name="click_to_start_the_service">Click to start the service</string>
+    <string name="start_finger_print_service">Start Finger Print Service</string>
+    <string name="start_card_service">Start Card Service</string>
+    <string name="last_server_response">Last Server Response</string>
+    <string name="clock_in">Clock In</string>
+    <string name="clock_out">Clock Out</string>
+    <string name="pickup">Pickup</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="contact_support">Contact support</string>
+    <string name="stop_services">Stop Services</string>
+    <string name="no_users_found">No users found</string>
+
+</resources>
